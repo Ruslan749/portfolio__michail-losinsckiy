@@ -115,22 +115,64 @@ document.addEventListener('DOMContentLoaded', function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _modules_promo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/promo */ "./src/js/modules/promo.js");
-/* harmony import */ var _dist_sitingSlader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../dist/sitingSlader */ "./dist/sitingSlader.js");
-/* harmony import */ var _dist_sitingSlader__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_dist_sitingSlader__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _modules_modal__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/modal */ "./src/js/modules/modal.js");
+/* harmony import */ var _dist_sitingSlader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../dist/sitingSlader */ "./dist/sitingSlader.js");
+/* harmony import */ var _dist_sitingSlader__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_dist_sitingSlader__WEBPACK_IMPORTED_MODULE_2__);
 // import "./slider";
 // import modals from "./modules/modals";
 // import tabs from './modules/tabs';
 // import forms from './modules/forms';
 
 
+
 window.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
-  Object(_modules_promo__WEBPACK_IMPORTED_MODULE_0__["default"])(); // sitingSlader();
+  Object(_modules_promo__WEBPACK_IMPORTED_MODULE_0__["default"])();
+  Object(_modules_modal__WEBPACK_IMPORTED_MODULE_1__["default"])(); // sitingSlader();
   // forms();
   // tabs();
   // modals();
 });
+
+/***/ }),
+
+/***/ "./src/js/modules/modal.js":
+/*!*********************************!*\
+  !*** ./src/js/modules/modal.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+const modal = () => {
+  const modal = document.querySelector('.modal'); // объект
+
+  const btn = document.querySelectorAll('.button__modal'); // масив
+
+  const close = document.querySelector('.close');
+  const windows = document.querySelectorAll('[data-modal]');
+  btn.forEach(item => {
+    item.addEventListener('click', e => {
+      if (e.target) {
+        e.preventDefault();
+      }
+
+      windows.forEach(item => {
+        item.style.display = "none";
+      });
+      modal.style.display = "block";
+      document.body.style.overflow = "hidden"; //  для того чтобы при появлении мод окна страница замораживалась
+    });
+  });
+  close.addEventListener('click', () => {
+    modal.style.display = 'none';
+    document.body.style.overflow = "";
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (modal);
 
 /***/ }),
 

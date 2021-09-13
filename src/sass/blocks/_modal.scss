@@ -31,7 +31,7 @@
 
         &__subtitle-two{
             position: absolute;
-            bottom: 90px;
+            bottom: 180px;
             left: 50%;
             text-align: center;
             transform: translateX(-50%);
@@ -40,7 +40,7 @@
         }
         &__form{
             position: absolute;
-            top: 30%;
+            top: 20%;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -52,13 +52,21 @@
             text-align: center;
             &-container{
                 display: flex;
-                margin-top: 60px;
+                margin-top: 30px;
             }
             &-text{
                 margin: auto;
                 padding-right: 25px;
                 font-size: 36px;
             }
+        }
+
+        &__icons{
+            position: absolute;
+            bottom: 65px;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: 0;
         }
     
 }

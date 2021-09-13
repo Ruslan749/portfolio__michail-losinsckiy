@@ -67,7 +67,7 @@
       <div class="menu__close">
         <h1 class="menu__title title">Mikhail Losinsky</h1>
         <h2 class="menu__region title title-region">Sverdlovsk region</h2>
-        <button class="menu__button button " type="button ">Оставить заявку</button>
+        <button class="menu__button button button__modal" type="button  ">Оставить заявку</button>
 
         <div class="menu__icons">
           <div class="menu__icons_divaidar"></div>
@@ -208,10 +208,7 @@
         <img class="slider__img" src="img/portfolio_slader/C3DBB1C3-AA2E-4B53-982C-36C4C4EF2EE8.jpeg" alt="">
       </div>
     </div>
-  </div>
-  <!-- Стрелки для перехода к предыдущему и следующему слайду -->
-  <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
-  <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>     
+  </div>  
   </div>
 </div>
 </div>
@@ -289,7 +286,7 @@
       </div>
 
       <div class="prase__card_prase">5000 р.</div>
-      <button class="button prase__card_botton">сделать заявку</button>
+      <button class="button prase__card_botton button__modal">сделать заявку</button>
   </div>
 
   <div class="prase__card">
@@ -317,7 +314,7 @@
       </div>
 
       <div class="prase__card_prase">10000 р.</div>
-      <button class="button prase__card_botton">сделать заявку</button>
+      <button class="button prase__card_botton button__modal">сделать заявку</button>
   </div>
 
   <div class="prase__card">
@@ -346,7 +343,7 @@
       </div>
 
       <div class="prase__card_prase">15000 р.</div>
-      <button class="button prase__card_botton">сделать заявку</button>
+      <button class="button prase__card_botton button__modal">сделать заявку</button>
   </div>
 
 </div>
@@ -450,7 +447,7 @@
         <input name="name" class="input__input" type="text" size="64" placeholder="Миша">
         <input name="tell" class="input__input" type="tel" size="64"  placeholder="+7 (___) ___-__-__"
         >
-        <button class="button input__button">отправить</button>
+        <button class="button input__button button__toSend">отправить</button>
       </form>
   
       <div class="subtitle input__subtitle">Мои социальные сети</div>
@@ -466,7 +463,7 @@
 </section>
 
 <section>
-  <div class="modal">
+  <div class="modal" data-modal>
     <div class="modal__window">
       <img src="img/foto_modal.jpeg" alt="">
       <div class="subtitle modal__subtitle-one">Мы ценим ваш выбор и свяжемся с вами 
@@ -480,10 +477,16 @@
           <p class="subtitle modal__input-text ">Телефон:</p>
           <input type="tel" name="phone" placeholder="+7 (___) ___-__-__"  class="modal__input">
           </div>
-
+          <button class="button input__button button__toSend">отправить</button>
         </form>
       <div class="subtitle modal__subtitle-two">Или свяжитесь со мной 
         любым другим удобным для вас способом
+      </div>
+      <div class="menu__navigation__icons modal__icons " >
+        <a href="#"><img class="menu__navigation__icons-link-svg" src="icons/social_over/Instagram_white.svg" alt="Instagram"></a>
+      <a href="#"><img class="menu__navigation__icons-link-svg" src="icons/social_over/Telegram_white.svg" alt="Telegram"></a>
+      <a href="#"><img class="menu__navigation__icons-link-svg" src="icons/social_over/VK_white.svg" alt="VK"></a>
+      <a href="#"><img class="menu__navigation__icons-link-svg" src="icons/social_over/WhatsApp_white.svg" alt="WhatsApp"></a>
       </div>
     </div>
     <div class="close">
