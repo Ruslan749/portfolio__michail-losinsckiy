@@ -20,13 +20,13 @@
     "babel-loader": "^8.2.2",
     "browser-sync": "^2.27.5",
     "core-js": "^3.16.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
-    "gulp-imagemin": "^7.1.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-imagemin": "^8.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sass-glob": "^1.1.0",
     "sass": "^1.37.5",
-    "webpack": "^4.46.0",
+    "webpack": "^5.74.0",
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
